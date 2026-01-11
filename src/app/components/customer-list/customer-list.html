@@ -1,0 +1,22 @@
+<h2>Listado de Customers</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nombres</th>
+      <th scope="col">Apellidos</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (c of customers; track c.id){
+        <tr>
+        <th scope="row">{{c.id}}</th>
+        <td>{{c.firstName}}</td>
+        <td>{{c.lastName}}</td>
+        <td>{{c.email}}</td>
+        </tr>
+    }
+  </tbody>
+</table>
