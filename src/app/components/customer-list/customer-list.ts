@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Customer } from '../../customer';
 import { CustomerService } from '../../service/customer';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-customer-list',
-  imports: [],
+  standalone: true,
+  imports: [RouterModule],
   templateUrl: './customer-list.html',
   styleUrl: './customer-list.css',
 })
