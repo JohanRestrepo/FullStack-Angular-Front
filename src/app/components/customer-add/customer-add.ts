@@ -38,7 +38,7 @@ export class CustomerAdd implements OnInit{
       () => {
     // Cuando el backend confirma que el customer se creó
     alert('Customer creado correctamente!');
-    this.router.navigate(['/']);  // 👈 vuelve al listado
+    this.router.navigate(['/']);  // vuelve al listado
     }, error => {
       console.error('Error al crear customer:', error);
     }

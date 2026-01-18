@@ -7,18 +7,18 @@
 
         <div class="mb-3">
             <label for="firstName" class="form-label">Nombres</label>
-            <input [(ngModel)]="firstName" type="text" class="form-control" id="firstName" name="firstName">
+            <input [(ngModel)]="customer.firstName" type="text" class="form-control" id="firstName" name="firstName">
         </div>
 
         <div class="mb-3">
             <label for="lastName" class="form-label">Apellidos</label>
-            <input [(ngModel)]="lastName" type="text" class="form-control" id="lastName" name="lastName">
+            <input [(ngModel)]="customer.lastName" type="text" class="form-control" id="lastName" name="lastName">
         </div>
 
         <div class="mb-3">
             <label for="email" class="form-label">Dirección de correo electronico</label>
-            <input [(ngModel)]="email" type="email" class="form-control" id="email" name="email">
+            <input [(ngModel)]="customer.email" type="email" class="form-control" id="email" name="email">
         </div>
-        <button type="submit" class="btn btn-success" (click)="addCustomer()">Crear</button>
+        <button type="submit" class="btn btn-success" (click)="onSubmit()">Modificar</button>
     </form>
 </div>
